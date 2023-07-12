@@ -4,7 +4,7 @@ import pytz
 # entering of number
 number_entered = input('Enter your number: ')
 
-# asking for correction if entered number is not an integer
+# asking for correction if entered number is not integer
 while not number_entered.isdigit():
     print("Please enter a valid integer.")
     number_entered = input('Enter your number: ')
@@ -12,9 +12,9 @@ while not number_entered.isdigit():
 # confirming the number entered + saying today's  date
 print('So today, on', datetime.date.today(),  'your number is %s\n' % number_entered)
 
-########################## TIME ZONES
+########################## TIME ZONES SETTINGS
 
-# Get the current local time
+# current local time
 cet = pytz.timezone('CET')
 local_now = datetime.datetime.now(cet)
 
@@ -30,7 +30,7 @@ cst_now = datetime.datetime.now(cst)
 # Format and print the local Chinese time
 print('Current local Chinese time:', cst_now.strftime('%Y-%m-%d %H:%M:%S'))
 
-########################## TIME ZONES END
+########################## TIME ZONES SETTINGS END
 
 
 # declaring the number of decimal places required
